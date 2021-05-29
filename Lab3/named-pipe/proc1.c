@@ -33,4 +33,5 @@ void main() {
         fwrite(buf, sizeof(char), len, out);
     
     close(fd);
+    unlink(FIFO);
 }

@@ -15,11 +15,11 @@ void copy(char *indir, char *outdir) {
         exit(1);        
     }
 
-    // while ((len = read(in, buf, BUFSIZE)) > 0)
-    //     write(out, buf, len);
+	while ((len = read(in, buf, BUFSIZE)) > 0)
+	    write(out, buf, len);
 
-    while ((len = read(in, buf, 1)) > 0)
-        write(out, buf, 1);   
+//    while ((len = read(in, buf, 1)) > 0)
+//        write(out, buf, 1);   
 
     close(in);
     close(out);
@@ -41,11 +41,11 @@ void fcopy(char *indir, char *outdir) {
         exit(1);          
     }
 
-    // while ((len = fread(buf, sizeof(char), BUFSIZE, in)) > 0)
-    //     fwrite(buf, sizeof(char), len, out);
+    while ((len = fread(buf, sizeof(char), BUFSIZE, in)) > 0)
+        fwrite(buf, sizeof(char), len, out);
 
-    while ((len = fread(buf, 1, 1, in)) > 0)
-        fwrite(buf, 1, 1, out);
+//    while ((len = fread(buf, 1, 1, in)) > 0)
+//        fwrite(buf, 1, 1, out);
 
     fclose(in);
     fclose(out);
