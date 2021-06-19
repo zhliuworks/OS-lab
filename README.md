@@ -6,3 +6,5 @@ Lab 1 : [Dynamic Partitioning Memory Management](https://github.com/zhliuworks/O
 Lab 2 : [Unix Process Control and IPC](https://github.com/zhliuworks/OS-lab/tree/master/Lab2)
 
 Lab 3 : [File System Operations](https://github.com/zhliuworks/OS-lab/tree/master/Lab3)
+
+Lab 4 : [Unix Shell Command](https://github.com/zhliuworks/OS-lab/tree/master/Lab4)
